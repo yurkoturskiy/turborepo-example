@@ -4,12 +4,16 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
+      "env": ["*"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
-    "lint": {},
+    "lint": {
+      "env": ["*"]
+    },
     "dev": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      "env": ["*"]
     }
   }
 }
