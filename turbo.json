@@ -15,8 +15,6 @@
       "persistent": true,
       "env": ["*"]
     },
-    "serve": {
-      "dependsOn": ["build"]
-    }
+    "serve": {}
   }
 }
